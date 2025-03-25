@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootsrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/output.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-primary">💓Relationship💓</h1>
+        {% block content %}
+            <form>
+                <table>
+                    <tr>
+                        <td><strong>Name 1 :</strong></td>
+                        <td>{{name1_data}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Name 2 :</strong></td>
+                        <td>{{name2_data}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Relationship :</strong></td>
+                        <td>{{relationship}}</td>
+                    </tr>
+                </table>
+                <a href="/" class="btn btn-primary btn-custom">Go Home</a>
+            </form>
+        {% endblock %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

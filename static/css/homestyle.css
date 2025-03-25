@@ -1,0 +1,98 @@
+/* Apply a pink background to the whole page */
+body {
+    background: url("../images/2.jpg")no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}  
+
+/* Center the form with a card style */
+.container {
+    background: #ff6666;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid black; /* Pink border */
+    max-width: 350px; /* Made the container smaller */
+    width: 100%;
+    text-align: center; /* Centering the content */
+     
+}
+
+/* Style the title */
+h2 {
+    color: #d63384; /* Dark pink */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    color: #FDC4F1;
+    width: 35%;  /* Adjust width as needed */
+    text-align: right;
+    font-weight: bold;
+    margin-right: 10px; /* Space between label and input */
+    white-space: nowrap;  /* Prevents the text from breaking into two lines */
+}
+
+.form-control {
+    width: 60%;  /* Ensures input box takes the remaining space */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #d63384;
+}
+
+
+
+/* Style buttons */
+.btn-block {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #EFBDE2; 
+    border-radius: 5%;
+    width: 45%;
+    border: none;
+    margin-bottom: 12px;
+    margin-right: 15px;
+    margin: 5px;
+
+}
+
+.btn-danger {
+    background-color: #B2E4ED; /* Red */
+    border: none;
+    border-radius: 5%;
+    width: 45%;
+    border: none;
+    margin-bottom: 12px;    
+    
+}
+
+/* Style the result box */
+.alert {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #d63384; /* Pink border */
+    color: white;
+    background-color: #801b4d; /* Pink background */
+    text-align: center;
+    margin-top: 15px;
+}
